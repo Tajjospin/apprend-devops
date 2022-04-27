@@ -6,7 +6,7 @@ node{
     }
     
     stage('Run image') {
-        docker.image('xavki/nginx').withRun(' -p 80:80') { c ->
+        docker.image('nginx').withRun(' -p 80:80') { c ->
         sh 'docker ps'
         sh 'petit teste de jospin'
         sh 'curl loclhost'
