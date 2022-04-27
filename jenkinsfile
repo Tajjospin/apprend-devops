@@ -8,7 +8,7 @@ node{
     stage('Run image') {
         docker.image('nginx').withRun(' -p 80:80') { c ->
         sh 'docker ps'
-        sh 'petit teste de jospin'
+        sh 'echo "petit teste de jospin"'
         sh 'curl loclhost'
         
     }
